@@ -1,0 +1,58 @@
+name: Deploy Next.js to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Adjust if needed
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'yarn'
+
+      - name: Clear Yarn Cache
+        run: yarn cache clean  # Clear any cached conflicts
+
+      - name: Install dependencies
+        run: |
+          if [ ! -f yarn.lock ]; then
+            echo "🚨 yarn.lock not found. Please ensure it exists in the repo.";
+            exit 1;
+          fi
+          yarn install --frozen-lockfile
+
+      - name: Verify Next.js Config
+        run: cat next.config.js  # Verify the config is correct
+
+      - name: Build Next.js
+        env:
+          NEXT_PUBLIC_BASE_PATH: /lisaa
+        run: yarn build
+
+      - name: Export Next.js
+        env:
+          NEXT_PUBLIC_BASE_PATH: /lisaa
+        run: yarn export
+
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages  # Adjust to 'gh-pages' if using a separate branch
