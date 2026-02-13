@@ -39,12 +39,12 @@ jobs:
 
       - name: Build Next.js
         env:
-          NEXT_PUBLIC_BASE_PATH: /lisaa
+          NEXT_PUBLIC_BASE_PATH: ''
         run: yarn build
 
       - name: Export Next.js
         env:
-          NEXT_PUBLIC_BASE_PATH: /lisaa
+          NEXT_PUBLIC_BASE_PATH: ''
         run: yarn export
 
       - name: Add .nojekyll file

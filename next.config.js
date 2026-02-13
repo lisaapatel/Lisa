@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 console.log("Next.js configuration loaded");
 
-// For GitHub Pages deployment, basePath and assetPrefix are REQUIRED
-// They ensure assets (CSS, images) and navigation links work correctly at /lisaa/
-// Set DISABLE_BASE_PATH=true to disable for local development testing
-const disableBasePath = process.env.DISABLE_BASE_PATH === 'true';
+// Custom domain (lisaapatel.com) - site is served at root, so no basePath needed.
+// Repo name is "lisa". If you need to serve from username.github.io/lisa/ instead,
+// set USE_BASE_PATH=true to use basePath: '/lisa'
+const useBasePath = process.env.USE_BASE_PATH === 'true';
 
 const nextConfig = {
   reactStrictMode: true,
@@ -13,12 +13,11 @@ const nextConfig = {
   images: {
     unoptimized: true,  // Required for static export
   },
-  // basePath and assetPrefix are essential for GitHub Pages deployment
-  // Without these, assets and navigation will fail when deployed at /lisaa/
-  ...(disableBasePath ? {} : {
-    basePath: '/lisaa',
-    assetPrefix: '/lisaa/',
-  }),
+  // With custom domain, assets are at root. Only set basePath if not using custom domain.
+  ...(useBasePath ? {
+    basePath: '/lisa',
+    assetPrefix: '/lisa/',
+  } : {}),
 };
 
 module.exports = nextConfig;
