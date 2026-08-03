@@ -8,12 +8,12 @@ const EXPERIENCES = [
   {
     company: "Upgrade, Inc.",
     url: "https://www.upgrade.com",
-    title: "Product Manager 2",
+    title: "Product Manager II",
     timePeriod: "June 2025 – Present",
     location: "San Francisco, CA",
     description: [
       "AI Support Agent – Home Improvement: Led the launch of AI-powered customer support for Home Improvement, designing and owning the borrower-facing chat and voice journeys on the company's conversational AI agent. Built a rigorous testing program on real customer data, spanning account states, plan types, and both chat and voice, that caught issues before they reached customers: journeys misrouting across products, missing data in the agent's answers, an AI hallucination that resurfaced after a change, and conflicting rules that produced fabricated information. Partnered with engineering to drive each fix to launch, set the testing standard for Home Improvement on the platform, and was invited into its roadmap for scaling journeys and AI evaluation",
-      "Cross-Sell Strategy & Monetization: Co-led a company-wide initiative presenting ~2M Personal Loan and BNPL customers with Home Improvement Loan offers by defining eligibility across credit and risk signals. Partnered with internal teams to deliver targeted offers and route qualified customers to partners, unlocking a potential new revenue stream",
+      "Cross-Sell Strategy & Monetization: Co-led a company-wide cross-sell marketplace connecting ~3,500 merchants with ~2M existing Personal Loan and BNPL customers, defining eligibility across credit and risk signals. Built the channel for customers to pre-qualify and apply through merchants and route qualified leads to partners, acquiring customers into a new product line and unlocking a new revenue stream",
       "OCR-Driven Application Optimization: Led OCR integration in the loan application funnel to reduce borrower friction and manual entry errors, processing ~85K applications. Drove 50-60% feature adoption and 5% faster loan openings while cutting downstream verification steps and improving data accuracy",
       "Channel Expansion – Apply by Phone: Launched a phone-based application channel where customers start their application by phone and complete signing online, expanding reach for less tech-savvy borrowers. The hardest part was legal compliance: I built plan-specific agent scripts so a support agent could walk a customer through the same disclosures and experience by phone that they would get online.",
       "Bidirectional Payments SMS: Owned end-to-end a secure two-way SMS channel letting borrowers approve or decline merchant-initiated payment requests by text without opening the app. Kept the borrower experience simple by putting verification, eligibility, and fraud gates on the backend, cutting average approval time from 90 to ~20 minutes with 17% adoption post-launch",
@@ -26,12 +26,13 @@ const EXPERIENCES = [
   {
     company: "Upgrade, Inc.",
     url: "https://www.upgrade.com",
-    title: "Product Manager 1",
+    title: "Product Manager I",
     timePeriod: "Jan 2024 – June 2025",
     location: "San Francisco, CA",
     description: [
-      "Internal Customer Support Tools: Delivered internal tooling for support teams to manage hardship enrollments, payment updates, autopay, and post-dispute billing, improving resolution across ~1.5K monthly inquiries and reducing operational ambiguity",
       "Disputes & Statement Management: Led 0→1 delivery of borrower-facing dispute resolution workflows, including automated emails, post-dispute statement updates, and audit logs, supporting ~500 monthly disputes while significantly reducing resolution time and operational ambiguity",
+      "Refunds: Owned end-to-end borrower servicing across disputes and refunds as the team SME, extending the servicing suite by building refund workflows from scratch",
+      "Internal Customer Support Tools: Delivered internal agent tools to manage payment due dates, autopay, and a savings calculator, improving call resolution across ~1.5K monthly inquiries and reducing risk exposure",
       "Streamlined Authentication Flow: Analyzed the onboarding funnel to surface drop-off opportunities, then eliminated redundant verification steps and introduced a passwordless magic-link sign-in so users could get set up faster, resulting in 35% faster signups",
       "Risk-Based Fraud Detection: Partnered with data science to implement intelligent fraud rules, reducing fraud losses while preserving a frictionless experience for trusted customers",
       "Cross-Functional Product Execution: Drove alignment across engineering, design, legal, compliance, operations, and sales to execute product initiatives efficiently"
@@ -81,7 +82,7 @@ const EXPERIENCES = [
   {
     company: "Gilead Sciences, Inc.",
     url: "#",
-    title: "Data Scientist, Intern",
+    title: "Data Scientist Intern",
     timePeriod: "Apr 2020 - Dec 2020",
     location: "Foster City, CA",
     description: [

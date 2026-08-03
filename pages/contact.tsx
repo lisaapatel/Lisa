@@ -27,7 +27,7 @@ const Contact: NextPage = () => {
         
         <div className="flex justify-center items-center space-x-8 mb-12">
           <a 
-            href="mailto:contact@lisapatel.com" 
+            href="mailto:lisaapatel03@gmail.com"
             className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             aria-label="Email"
           >
@@ -35,7 +35,7 @@ const Contact: NextPage = () => {
           </a>
           
           <a 
-            href="https://github.com/LISAAPATEL" 
+            href="https://github.com/lisaapatel"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
