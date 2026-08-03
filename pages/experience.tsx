@@ -12,11 +12,12 @@ const EXPERIENCES = [
     timePeriod: "June 2025 – Present",
     location: "San Francisco, CA",
     description: [
+      "AI Support Agent – Home Improvement: Led the launch of AI-powered customer support for Home Improvement, designing and owning the borrower-facing chat and voice journeys on the company's conversational AI agent. Built a rigorous testing program on real customer data, spanning account states, plan types, and both chat and voice, that caught issues before they reached customers: journeys misrouting across products, missing data in the agent's answers, an AI hallucination that resurfaced after a change, and conflicting rules that produced fabricated information. Partnered with engineering to drive each fix to launch, set the testing standard for Home Improvement on the platform, and was invited into its roadmap for scaling journeys and AI evaluation",
       "Cross-Sell Strategy & Monetization: Co-led a company-wide initiative presenting ~2M Personal Loan and BNPL customers with Home Improvement Loan offers by defining eligibility across credit and risk signals. Partnered with internal teams to deliver targeted offers and route qualified customers to partners, unlocking a potential new revenue stream",
-      "OCR-Driven Application Optimization: Led OCR integration in the loan application funnel to reduce borrower friction and manual entry errors, processing ~85K applications. Reduced application completion time and downstream verification steps, while improving data accuracy",
-      "Channel Expansion – Apply by Phone: Owned development of an apply-by-phone experience, expanding assisted application reach by ~5% for less tech-savvy customers",
-      "Bidirectional SMS Decisioning: Delivered a secure bidirectional SMS flow enabling customers to approve or decline offers via text, reducing funnel abandonment while enforcing fraud checks and eligibility controls",
-      "Loan Cancellation Flow: Built end-to-end loan cancellation workflow supporting ~200 cancellations per month, improving customer experience while maintaining operational integrity",
+      "OCR-Driven Application Optimization: Led OCR integration in the loan application funnel to reduce borrower friction and manual entry errors, processing ~85K applications. Drove 50-60% feature adoption and 5% faster loan openings while cutting downstream verification steps and improving data accuracy",
+      "Channel Expansion – Apply by Phone: Launched a phone-based application channel where customers start their application by phone and complete signing online, expanding reach for less tech-savvy borrowers. The hardest part was legal compliance: I built plan-specific agent scripts so a support agent could walk a customer through the same disclosures and experience by phone that they would get online.",
+      "Bidirectional Payments SMS: Owned end-to-end a secure two-way SMS channel letting borrowers approve or decline merchant-initiated payment requests by text without opening the app. Kept the borrower experience simple by putting verification, eligibility, and fraud gates on the backend, cutting average approval time from 90 to ~20 minutes with 17% adoption post-launch",
+      "Loan Cancellation Flow: Built an end-to-end loan cancellation workflow supporting ~200 cancellations per month that let customers cancel while recouping the disbursed funds from merchants, protecting revenue and improving the customer experience while maintaining operational integrity",
       "Roadmap & Executive Collaboration: Influenced shared roadmap planning by prioritizing high-impact initiatives across growth, risk, and UX. Presented progress and tradeoffs to VP-level stakeholders and drove end-to-end delivery"
     ],
     
@@ -31,7 +32,7 @@ const EXPERIENCES = [
     description: [
       "Internal Customer Support Tools: Delivered internal tooling for support teams to manage hardship enrollments, payment updates, autopay, and post-dispute billing, improving resolution across ~1.5K monthly inquiries and reducing operational ambiguity",
       "Disputes & Statement Management: Led 0→1 delivery of borrower-facing dispute resolution workflows, including automated emails, post-dispute statement updates, and audit logs, supporting ~500 monthly disputes while significantly reducing resolution time and operational ambiguity",
-      "Streamlined Authentication Flow: For onboarding flow, eliminated redundant verification steps, resulting in 35% faster signups",
+      "Streamlined Authentication Flow: Analyzed the onboarding funnel to surface drop-off opportunities, then eliminated redundant verification steps and introduced a passwordless magic-link sign-in so users could get set up faster, resulting in 35% faster signups",
       "Risk-Based Fraud Detection: Partnered with data science to implement intelligent fraud rules, reducing fraud losses while preserving a frictionless experience for trusted customers",
       "Cross-Functional Product Execution: Drove alignment across engineering, design, legal, compliance, operations, and sales to execute product initiatives efficiently"
     ],
@@ -40,11 +41,11 @@ const EXPERIENCES = [
   {
     company: "Upgrade, Inc.",
     url: "https://www.upgrade.com",
-    title: "APM / Product Analyst",
+    title: "Associate Product Manager",
     timePeriod: "Aug 2022 – Jan 2024",
     location: "San Francisco, CA",
     description: [
-      "Pre-Launch Product: Partnered with engineering through blitz testing and iterative releases; translated user feedback into product changes. Built KPI frameworks used by executives to track product health for a B2B2C business scaling to ~$2B in revenue",
+      "Pre-Launch Product: Partnered with engineering through blitz testing and iterative releases; translated user feedback into product changes. Built KPI frameworks used by executives to track product health for a B2B2C business scaling to ~$2B in loan originations",
       "Merchant Servicing Platform: Developed an internal merchant servicing center supporting ~2K merchants, enabling case-by-case configuration and operational oversight",
       "Analytics & Feedback Loops: Led data collection, analysis, and reporting to inform product decisions and improve user experience"
     ],
@@ -67,7 +68,7 @@ const EXPERIENCES = [
   {
     company: "Okta, Inc.",
     url: "#",
-    title: "Data Science Analyst, Intern",
+    title: "Data Science Analyst",
     timePeriod: "Mar 2021 - Sept 2021",
     location: "San Francisco, CA",
     description: [
@@ -93,7 +94,7 @@ const EXPERIENCES = [
   {
     company: "BioMarin Pharmaceutical, Inc.",
     url: "#",
-    title: "Data Science Analyst, Intern",
+    title: "Data Science Analyst",
     timePeriod: "Jun 2020 - Sept 2020",
     location: "San Rafael, CA",
     description: [
@@ -159,7 +160,7 @@ const Experience: NextPage = () => {
         {/* Upgrade Summary */}
         <div className="mb-12 bg-white dark:bg-dark-card shadow-sm rounded-lg p-6">
           <p className={`text-sm leading-relaxed mb-3 ${textColorSecondary}`}>
-            I have spent the last four years at Upgrade, growing from Product Analyst to Product Manager 2,
+            I have spent the last four years at Upgrade, growing from Associate Product Manager to Product Manager 2,
             driving initiatives across onboarding, cross-sell, fraud, and customer experience in lending products.
           </p>
           <p className={`text-sm leading-relaxed ${textColorSecondary}`}>
