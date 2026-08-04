@@ -78,7 +78,7 @@ const Contact: NextPage = () => {
           </a>
           
           <a 
-            href="https://drive.google.com/file/d/1ayqG-fLxciouw6t_kGkF0ka_aNgejgaB/view?usp=sharing" 
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
