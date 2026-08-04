@@ -161,7 +161,7 @@ const Experience: NextPage = () => {
         {/* Upgrade Summary */}
         <div className="mb-12 bg-white dark:bg-dark-card shadow-sm rounded-lg p-6">
           <p className={`text-sm leading-relaxed mb-3 ${textColorSecondary}`}>
-            I have spent the last four years at Upgrade, growing from Associate Product Manager to Product Manager 2,
+            I have spent the last four years at Upgrade, growing from Associate Product Manager to Product Manager II,
             driving initiatives across onboarding, cross-sell, fraud, and customer experience in lending products.
           </p>
           <p className={`text-sm leading-relaxed ${textColorSecondary}`}>
