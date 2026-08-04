@@ -56,3 +56,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           publish_branch: gh-pages  # Adjust to 'gh-pages' if using a separate branch
+          cname: www.lisaapatel.com  # Without this, every deploy wipes the custom domain
